@@ -4,27 +4,27 @@
 This project is an AI-powered aptitude exam portal built using Streamlit and integrated with the Groq API. It allows users to generate custom aptitude questions, take exams on various topics and difficulties, and track their performance.
 
 ## Features
-* **User Authentication:** Secure user login and registration.
-* **AI-Powered Question Generation:** Generate aptitude questions based on specified topics and difficulty levels (easy, medium, hard) using the Groq API.
-* **Dynamic Exam Taking:** Take timed aptitude tests with questions loaded from the database and shuffled options.
-* **Exam History & Performance Tracking:** View past exam results, including topic, difficulty, score, and percentage.
-* **Question Management:** Browse, edit, and delete saved questions directly within the application.
-* **SQLite Database:** Persistent storage for questions, user data, and exam results.
+**User Authentication:** Secure user login and registration.
+**AI-Powered Question Generation:** Generate aptitude questions based on specified topics and difficulty levels (easy, medium, hard) using the Groq API.
+**Dynamic Exam Taking:** Take timed aptitude tests with questions loaded from the database and shuffled options.
+**Exam History & Performance Tracking:** View past exam results, including topic, difficulty, score, and percentage.
+**Question Management:** Browse, edit, and delete saved questions directly within the application.
+**SQLite Database:** Persistent storage for questions, user data, and exam results.
 
 ## Technologies Used
-* [cite_start]**Frontend/Web Framework:** Streamlit [cite: 4, 281]
-* [cite_start]**AI API Integration:** Groq API (using the `llama3-8b-8192` model for question generation) [cite: 4, 282, 283]
-* [cite_start]**Database:** SQLite3 [cite: 4, 281]
-* [cite_start]**Programming Language:** Python 3.9+ [cite: 280]
-* [cite_start]**Other Python Libraries:** `python-dotenv` (for environment variables), `hashlib` (for password hashing), `random` (for shuffling), `time` (for timers) [cite: 282]
+**Frontend/Web Framework:** Streamlit
+**AI API Integration:** Groq API (using the `llama3-8b-8192` model for question generation) 
+**Database:** SQLite3
+**Programming Language:** Python 3.9+
+**Other Python Libraries:** `python-dotenv` (for environment variables), `hashlib` (for password hashing), `random` (for shuffling), `time` (for timers)
 
 ## Installation and Setup
 
 ### Prerequisites
-* [cite_start]Python 3.9 or higher [cite: 280]
-* [cite_start]Git (for cloning the repository) [cite: 280]
-* [cite_start]An active internet connection (required for Groq API communication) [cite: 285]
-* A Groq API Key
+Python 3.9 or higher 
+Git (for cloning the repository) 
+An active internet connection (required for Groq API communication) 
+A Groq API Key
 
 ### Steps:
 
@@ -47,7 +47,7 @@ This project is an AI-powered aptitude exam portal built using Streamlit and int
     ```bash
     pip install -r requirements.txt
     ```
-    (This will install `streamlit` and `groq` [cite: 278]).
+    (This will install `streamlit` and `groq`).
 
 4.  **Set up Groq API Key:**
     Create a file named `.env` in the root directory of your project (where `app.py` is located).
@@ -73,14 +73,14 @@ This project is an AI-powered aptitude exam portal built using Streamlit and int
 
 ## Database Structure
 The application uses an SQLite database (`questions.db`) with the following tables:
-* [cite_start]`users`: Stores user `id`, `username`, and `password` (hashed). [cite: 34]
-* [cite_start]`questions`: Stores `id`, `topic`, `difficulty`, `question` text, four `option` fields, and the `answer` text. [cite: 35]
-* [cite_start]`exam_results`: Records `id`, `user_id`, `exam_date`, `topic`, `difficulty`, `score`, and `total_questions` for each exam taken. [cite: 32]
+`users`: Stores user `id`, `username`, and `password` (hashed). 
+`questions`: Stores `id`, `topic`, `difficulty`, `question` text, four `option` fields, and the `answer` text.
+`exam_results`: Records `id`, `user_id`, `exam_date`, `topic`, `difficulty`, `score`, and `total_questions` for each exam taken.
 
 ## Development Environment
-* [cite_start]**Operating System:** Windows 10/11 (developed on, but portable) [cite: 279]
-* [cite_start]**IDE:** Visual Studio Code [cite: 280]
-* [cite_start]**Version Control:** Git [cite: 280]
+**Operating System:** Windows 10/11 (developed on, but portable) 
+**IDE:** Visual Studio Code 
+**Version Control:** Git
 
 ## Contributing
 Feel free to fork the repository, open issues, and submit pull requests.
