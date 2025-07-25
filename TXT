@@ -1,0 +1,18 @@
+Software Development Environment:
+Operating System: Windows 10/11 (Development OS, but portable to others).
+Programming Language: Python 3.9+
+Integrated Development Environment (IDE): Visual Studio Code.
+Version Control System: Git.
+Core Libraries and Frameworks:
+Web Framework: Streamlit (version compatible with st.rerun(), e.g., 1.29.0 or higher).
+Database: SQLite3 (built-in Python module).
+AI API Client: groq Python client library.
+Other Python Libraries: dotenv (for environment variables), hashlib (for password hashing), random (for shuffling), time (for timers).
+AI Model and Service:
+API Provider: Groq.
+Large Language Model (LLM): llama3-8b-8192 (or similar, depending on availability and performance during development).
+Hardware (Development Machine Example):
+Processor: Intel Core i5 / AMD Ryzen 5 or equivalent.
+RAM: 8 GB or more.
+Storage: SSD recommended for faster performance.
+Internet Connection: Required for API communication with Groq.
